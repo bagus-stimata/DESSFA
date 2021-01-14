@@ -12,11 +12,13 @@ import kotlinx.coroutines.flow.Flow
  */
 interface CocktailRepository {
     fun getCocktails(): Single<List<CocktailEntity>>
-    suspend fun getCocktailByName(cocktailName: String): Flow<Resource<List<CocktailEntity>>>
-    suspend fun saveFavoriteCocktail(cocktailEntity: CocktailEntity)
-    suspend fun isCocktailFavorite(cocktailEntity: CocktailEntity): Boolean
-    suspend fun getCachedCocktails(cocktailName: String): Resource<List<CocktailEntity>>
-    suspend fun saveCocktail(cocktailEntity: CocktailEntity)
-    suspend fun getFavoritesCocktails(): LiveData<List<CocktailEntity>>
-    suspend fun deleteFavoriteCocktail(favorites: FavoritesEntity)
+
+//    suspend fun getCocktailByName(cocktailName: String): Flow<Resource<List<CocktailEntity>>>
+//    suspend fun saveFavoriteCocktail(cocktailEntity: CocktailEntity)
+//    suspend fun isCocktailFavorite(cocktailEntity: CocktailEntity): Boolean
+//    suspend fun getCachedCocktails(cocktailName: String): Resource<List<CocktailEntity>>
+//    suspend fun saveCocktail(cocktailEntity: CocktailEntity)
+//    suspend fun getFavoritesCocktails(): LiveData<List<CocktailEntity>>
+//    suspend fun deleteFavoriteCocktail(favorites: FavoritesEntity)
+
 }

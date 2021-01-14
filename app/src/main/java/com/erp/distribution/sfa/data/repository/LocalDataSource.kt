@@ -12,7 +12,7 @@ import javax.inject.Inject
  * Created by Gastón Saillén on 10 August 2020
  */
 
-@ExperimentalCoroutinesApi
+//@ExperimentalCoroutinesApi
 class LocalDataSource @Inject constructor(private val cocktailDao: CocktailDao) {
     suspend fun saveFavoriteCocktail(cocktail: CocktailEntity) {
         return cocktailDao.saveFavoriteCocktail(cocktail.asFavoriteEntity())

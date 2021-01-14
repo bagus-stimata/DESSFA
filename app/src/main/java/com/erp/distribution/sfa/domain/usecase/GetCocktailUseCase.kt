@@ -25,26 +25,26 @@ class GetCocktailUseCase @Inject constructor(private val repository: CocktailRep
 //        return repository.getCocktails()
 //    }
 
-    suspend fun getCocktailByName(cocktailName: String): Flow<Resource<List<CocktailEntity>>> {
-        return repository.getCocktailByName(cocktailName)
-    }
-    suspend fun saveFavoriteCocktail(cocktailEntity: CocktailEntity){
-        return repository.saveFavoriteCocktail(cocktailEntity)
-    }
-    suspend fun isCocktailFavorite(cocktailEntity: CocktailEntity): Boolean {
-        return repository.isCocktailFavorite(cocktailEntity)
-    }
-    suspend fun getCachedCocktails(cocktailName: String): Resource<List<CocktailEntity>> {
-        return repository.getCachedCocktails(cocktailName)
-    }
-    suspend fun saveCocktail(cocktailEntity: CocktailEntity){
-        return repository.saveCocktail(cocktailEntity)
-    }
-    suspend fun getFavoritesCocktails(): LiveData<List<CocktailEntity>> {
-        return repository.getFavoritesCocktails()
-    }
-    suspend fun deleteFavoriteCocktail(favorites: FavoritesEntity){
-        return repository.deleteFavoriteCocktail(favorites)
-    }
+//    suspend fun getCocktailByName(cocktailName: String): Flow<Resource<List<CocktailEntity>>> {
+//        return repository.getCocktailByName(cocktailName)
+//    }
+//    suspend fun saveFavoriteCocktail(cocktailEntity: CocktailEntity){
+//        return repository.saveFavoriteCocktail(cocktailEntity)
+//    }
+//    suspend fun isCocktailFavorite(cocktailEntity: CocktailEntity): Boolean {
+//        return repository.isCocktailFavorite(cocktailEntity)
+//    }
+//    suspend fun getCachedCocktails(cocktailName: String): Resource<List<CocktailEntity>> {
+//        return repository.getCachedCocktails(cocktailName)
+//    }
+//    suspend fun saveCocktail(cocktailEntity: CocktailEntity){
+//        return repository.saveCocktail(cocktailEntity)
+//    }
+//    suspend fun getFavoritesCocktails(): LiveData<List<CocktailEntity>> {
+//        return repository.getFavoritesCocktails()
+//    }
+//    suspend fun deleteFavoriteCocktail(favorites: FavoritesEntity){
+//        return repository.deleteFavoriteCocktail(favorites)
+//    }
 
 }
