@@ -5,8 +5,9 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "farea")
-class FArea : Serializable {
+//@Entity(tableName = "farea")
+@Entity(tableName = "FArea")
+class FArea {
     @PrimaryKey(autoGenerate = true)
     var id = 0
 
@@ -34,6 +35,7 @@ class FArea : Serializable {
     var created = Date()
     var modified = Date()
     var modifiedBy = "" //User ID
+
     override fun equals(o: Any?): Boolean {
         if (this === o) return true
         if (o == null || javaClass != o.javaClass) return false

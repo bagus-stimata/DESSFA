@@ -10,7 +10,7 @@ import java.io.Serializable
 import java.util.*
 
 @Entity(tableName = "sysvar")
-class Sysvar : Serializable {
+class Sysvar  {
     @PrimaryKey(autoGenerate = true)
     var id: Int? = 0
     var sysvarId = ""

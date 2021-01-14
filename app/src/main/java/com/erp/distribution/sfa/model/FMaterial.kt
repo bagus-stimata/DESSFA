@@ -9,7 +9,7 @@ import java.io.Serializable
 import java.util.*
 
 @Entity(tableName = "fmaterial")
-class FMaterial : Serializable {
+class FMaterial  {
     @PrimaryKey(autoGenerate = true)
     var id = 0
 

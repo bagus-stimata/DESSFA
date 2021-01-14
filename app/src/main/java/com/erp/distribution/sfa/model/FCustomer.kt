@@ -9,8 +9,9 @@ import com.erp.distribution.sfa.model.modelenum.EnumTunaiKredit
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fcustomer")
-class FCustomer : Serializable {
+//@Entity(tableName = "fcustomer")
+@Entity(tableName = "FCustomer")
+class FCustomer{
     @PrimaryKey(autoGenerate = true)
     var id = 0
 

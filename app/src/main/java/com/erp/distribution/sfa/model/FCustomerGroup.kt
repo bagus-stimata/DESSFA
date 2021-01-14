@@ -5,7 +5,8 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fcustomer_group")
+//@Entity(tableName = "fcustomer_group")
+@Entity(tableName = "FCustomerGroup")
 class FCustomerGroup : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0
