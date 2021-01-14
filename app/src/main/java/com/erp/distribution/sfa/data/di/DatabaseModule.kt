@@ -1,10 +1,8 @@
 package com.erp.distribution.sfa.data.di;
 
-import android.app.Application
 import android.content.Context
-import androidx.room.Room
 import com.erp.distribution.sfa.Constants
-import com.erp.distribution.sfa.data.source.local.AppDatabase
+import com.erp.distribution.sfa.database.AppDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

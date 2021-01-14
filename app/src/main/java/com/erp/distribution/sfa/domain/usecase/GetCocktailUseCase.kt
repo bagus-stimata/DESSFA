@@ -2,6 +2,7 @@ package com.erp.distribution.sfa.domain.usecase
 
 import androidx.lifecycle.LiveData
 import com.erp.distribution.sfa.data.source.local.entity.CocktailEntity
+import com.erp.distribution.sfa.data.source.local.entity.FavoritesEntity
 import com.erp.distribution.sfa.domain.repository.CocktailRepository
 import com.erp.distribution.sfa.domain.usecase.base.SingleUseCase
 import com.erp.distribution.sfa.presentation.base.Resource
@@ -16,39 +17,34 @@ import javax.inject.Inject
  */
 class GetCocktailUseCase @Inject constructor(private val repository: CocktailRepository) : SingleUseCase<List<CocktailEntity>>() {
 
-    private var photoId: Long? = null
-
-    fun savePhotoId(id: Long) {
-        photoId = id
-    }
-
     override fun buildUseCaseSingle(): Single<List<CocktailEntity>> {
         return repository.getCocktails()
     }
 
-    fun getCocktails(): Single<List<CocktailEntity>> {
-        return repository.getCocktails()
+//    suspend fun getCocktails(): Single<List<CocktailEntity>> {
+//        return repository.getCocktails()
+//    }
+
+    suspend fun getCocktailByName(cocktailName: String): Flow<Resource<List<CocktailEntity>>> {
+        return repository.getCocktailByName(cocktailName)
     }
-    fun getCocktailByName(cocktailName: String): Flow<Resource<List<CocktailEntity>>> {
-        return repository.getCocktailByName(cocktailName!!)
-    }
-    fun saveFavoriteCocktail(cocktailEntity: CocktailEntity){
+    suspend fun saveFavoriteCocktail(cocktailEntity: CocktailEntity){
         return repository.saveFavoriteCocktail(cocktailEntity)
     }
-    fun isCocktailFavorite(cocktailEntity: CocktailEntity): Boolean {
+    suspend fun isCocktailFavorite(cocktailEntity: CocktailEntity): Boolean {
         return repository.isCocktailFavorite(cocktailEntity)
     }
-    fun getCachedCocktails(cocktailName: String): Resource<List<CocktailEntity>> {
+    suspend fun getCachedCocktails(cocktailName: String): Resource<List<CocktailEntity>> {
         return repository.getCachedCocktails(cocktailName)
     }
-    fun saveCocktail(cocktailEntity: CocktailEntity){
+    suspend fun saveCocktail(cocktailEntity: CocktailEntity){
         return repository.saveCocktail(cocktailEntity)
     }
-    fun getFavoritesCocktails(): LiveData<List<CocktailEntity>> {
+    suspend fun getFavoritesCocktails(): LiveData<List<CocktailEntity>> {
         return repository.getFavoritesCocktails()
     }
-    fun deleteFavoriteCocktail(cocktailEntity: CocktailEntity){
-        return repository.deleteFavoriteCocktail(cocktailEntity)
+    suspend fun deleteFavoriteCocktail(favorites: FavoritesEntity){
+        return repository.deleteFavoriteCocktail(favorites)
     }
 
 }

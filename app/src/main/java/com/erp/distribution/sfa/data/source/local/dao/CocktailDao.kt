@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 import com.erp.distribution.sfa.data.source.local.entity.CocktailEntity
 import com.erp.distribution.sfa.data.source.local.entity.FavoritesEntity
+import io.reactivex.rxjava3.core.Single
 
 /**
  * Created by Gastón Saillén on 07 July 2020
@@ -11,6 +12,9 @@ import com.erp.distribution.sfa.data.source.local.entity.FavoritesEntity
 
 @Dao
 interface CocktailDao {
+
+    @Query("SELECT * FROM cocktailTable")
+    fun getAllCoctails(): Single<List<CocktailEntity>>
 
     @Query("SELECT * FROM favoritesTable")
     suspend fun getAllFavoriteDrinks(): List<FavoritesEntity>
@@ -32,4 +36,5 @@ interface CocktailDao {
 
     @Query("SELECT * FROM favoritesTable WHERE cocktailId = :cocktailId")
     suspend fun getCocktailById(cocktailId: String): FavoritesEntity?
+
 }
