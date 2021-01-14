@@ -6,7 +6,8 @@ import com.erp.distribution.sfa.model.modelenum.EnumTipeSuratJalan
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "ftsalesh_historysj")
+//@Entity(tableName = "ftsalesh_historysj")
+@Entity(tableName = "FtSaleshHistorySJ")
 class FtSaleshHistorySJ : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

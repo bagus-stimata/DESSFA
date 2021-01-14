@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "fmaterial_group2")
+//@Entity(tableName = "fmaterial_group2")
+@Entity(tableName = "FMaterialGroup2")
 class FMaterialGroup2 {
     @PrimaryKey(autoGenerate = true)
     var id = 0

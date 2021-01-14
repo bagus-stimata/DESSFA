@@ -5,7 +5,8 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fexpedisi")
+//@Entity(tableName = "fexpedisi")
+@Entity(tableName = "FExpedisi")
 class FExpedisi : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0

@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "ftpriceh")
+//@Entity(tableName = "ftpriceh")
+@Entity(tableName = "FtPriceh")
 class FtPriceh {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0

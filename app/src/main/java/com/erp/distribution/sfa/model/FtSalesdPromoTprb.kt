@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 
-@Entity(tableName = "ftsalesd_promo_tprb")
+//@Entity(tableName = "ftsalesd_promo_tprb")
+@Entity(tableName = "FtSalesdPromoTprb")
 class FtSalesdPromoTprb : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

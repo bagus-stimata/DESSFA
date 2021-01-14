@@ -5,7 +5,8 @@ import androidx.room.PrimaryKey
 import com.erp.distribution.sfa.model.modelenum.EnumTipeWarehouse
 import java.util.*
 
-@Entity(tableName = "fwarehouse")
+//@Entity(tableName = "fwarehouse")
+@Entity(tableName = "FWarehouse")
 class FWarehouse {
     @PrimaryKey(autoGenerate = true)
     var id = 0

@@ -6,7 +6,8 @@ import com.erp.distribution.sfa.model.modelenum.EnumTunaiKredit
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fparam_diskon_nota")
+//@Entity(tableName = "fparam_diskon_nota")
+@Entity(tableName = "FParamDiskonNota")
 class FParamDiskonNota : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0

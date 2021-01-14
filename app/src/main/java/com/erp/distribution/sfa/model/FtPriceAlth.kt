@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "ftprice_alth")
+//@Entity(tableName = "ftprice_alth")
+@Entity(tableName = "FtPriceAlth")
 class FtPriceAlth {
     //** Tools: Jangan dihapus
     //** End Tools

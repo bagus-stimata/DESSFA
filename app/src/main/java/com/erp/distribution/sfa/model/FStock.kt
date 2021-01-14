@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "fstock")
+//@Entity(tableName = "fstock")
+@Entity(tableName = "FStock")
 class FStock {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0

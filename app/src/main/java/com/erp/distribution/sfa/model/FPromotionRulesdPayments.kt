@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "fpromotion_rulesd_payments")
+//@Entity(tableName = "fpromotion_rulesd_payments")
+@Entity(tableName = "FPromotionRulesdPayments")
 class FPromotionRulesdPayments {
     //Semua Giro dan Transfer masuk ke Giro
     //	@ManyToOne

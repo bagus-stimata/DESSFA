@@ -3,7 +3,8 @@ package com.erp.distribution.sfa.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "ftpricealtditems")
+//@Entity(tableName = "ftpricealtditems")
+@Entity(tableName = "FtPriceAltdItems")
 class FtPriceAltdItems {
     @PrimaryKey(autoGenerate = true)
     var id = 0

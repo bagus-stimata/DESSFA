@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "fsub_area")
+//@Entity(tableName = "fsub_area")
+@Entity(tableName = "FSubArea")
 class FSubArea {
     @PrimaryKey(autoGenerate = true)
     var id = 0

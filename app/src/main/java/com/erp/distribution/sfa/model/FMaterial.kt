@@ -8,7 +8,8 @@ import com.erp.distribution.sfa.model.modelenum.EnumUom
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fmaterial")
+//@Entity(tableName = "fmaterial")
+@Entity(tableName = "FMaterial")
 class FMaterial  {
     @PrimaryKey(autoGenerate = true)
     var id = 0

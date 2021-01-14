@@ -7,7 +7,8 @@ import com.erp.distribution.sfa.model.modelenum.*
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "ftsalesh")
+//@Entity(tableName = "ftsalesh")
+@Entity(tableName = "FtSalesh")
 class FtSalesh : Serializable {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0

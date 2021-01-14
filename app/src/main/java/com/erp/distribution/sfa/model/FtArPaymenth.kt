@@ -5,7 +5,8 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "ftarpaymenth")
+//@Entity(tableName = "ftarpaymenth")
+@Entity(tableName = "FtArPaymenth")
 class FtArPaymenth : Serializable {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0

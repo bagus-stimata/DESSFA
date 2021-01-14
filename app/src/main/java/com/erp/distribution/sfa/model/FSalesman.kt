@@ -6,7 +6,8 @@ import com.erp.distribution.sfa.model.modelenum.EnumReligion
 import com.erp.distribution.sfa.model.modelenum.EnumSalesType
 import java.util.*
 
-@Entity(tableName = "fsalesman")
+//@Entity(tableName = "fsalesman")
+@Entity(tableName = "FSalesman")
 class FSalesman {
     @PrimaryKey(autoGenerate = true)
     var id = 0

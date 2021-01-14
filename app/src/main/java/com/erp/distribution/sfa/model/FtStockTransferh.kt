@@ -6,7 +6,8 @@ import androidx.room.PrimaryKey
 import com.erp.distribution.sfa.model.modelenum.EnumTipeStockTransfer
 import java.util.*
 
-@Entity(tableName = "ftstock_transferh")
+//@Entity(tableName = "ftstock_transferh")
+@Entity(tableName = "FtStockTransferh")
 class FtStockTransferh {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0

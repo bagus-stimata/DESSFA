@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "fdistribution_channel")
+//@Entity(tableName = "fdistribution_channel")
+@Entity(tableName = "FDistributionChannel")
 class FDistributionChannel {
     /*
 	 * ex. 

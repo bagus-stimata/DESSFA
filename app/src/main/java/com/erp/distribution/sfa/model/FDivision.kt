@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "fdivision")
+//@Entity(tableName = "fdivision")
+@Entity(tableName = "FDivision")
 class FDivision {
     @PrimaryKey(autoGenerate = true)
     var id = 0

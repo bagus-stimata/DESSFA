@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "ftopnamed_items")
+//@Entity(tableName = "ftopnamed_items")
+@Entity(tableName = "FtOpnamedItems")
 class FtOpnamedItems {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

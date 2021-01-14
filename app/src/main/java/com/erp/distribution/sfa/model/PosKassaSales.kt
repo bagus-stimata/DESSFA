@@ -4,7 +4,8 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "poskassa_sales")
+//@Entity(tableName = "poskassa_sales")
+@Entity(tableName = "PosKassaSales")
 class PosKassaSales {
     @PrimaryKey(autoGenerate = true)
     private val id: Long = 0
