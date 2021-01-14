@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import com.erp.distribution.sfa.model.modelenum.EnumCurrency
 import java.util.*
 
-@Entity(tableName = "fVendor")
+@Entity(tableName = "fvendor")
 class FVendor {
     @PrimaryKey(autoGenerate = true)
     var id = 0

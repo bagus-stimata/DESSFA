@@ -3,27 +3,27 @@ package com.erp.distribution.sfa.model.transient_model
 import java.util.*
 
 class KeyIntDate {
-    var ID = 0
+    var id :Int = 0
     var date: Date? = null
 
     constructor() {}
     constructor(iD: Int, date: Date?) : super() {
-        ID = iD
+        id = iD
         this.date = date
     }
 
     fun getID(): Long {
-        return ID.toLong()
+        return id.toLong()
     }
 
     fun setID(iD: Int) {
-        ID = iD
+        id = iD
     }
 
     override fun hashCode(): Int {
         val prime = 31
         var result = 1
-        result = prime * result + ID
+        result = prime * result + id
         result = prime * result + if (date == null) 0 else date.hashCode()
         return result
     }
@@ -39,7 +39,7 @@ class KeyIntDate {
             return false
         }
         val other = obj
-        if (ID != other.ID) {
+        if (id != other.id) {
             return false
         }
         if (date == null) {

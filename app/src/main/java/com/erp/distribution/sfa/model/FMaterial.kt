@@ -2,11 +2,13 @@ package com.erp.distribution.sfa.model
 
 import androidx.room.Entity
 import androidx.room.Ignore
-import org.codehaus.jackson.annotate.JsonIgnore
+import androidx.room.PrimaryKey
+import com.erp.distribution.sfa.model.modelenum.EnumMaterialType
+import com.erp.distribution.sfa.model.modelenum.EnumUom
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fMaterial")
+@Entity(tableName = "fmaterial")
 class FMaterial : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0
@@ -18,30 +20,26 @@ class FMaterial : Serializable {
     * 2. 
     */
     @Ignore
-    @JsonIgnore
     var sourceID = 0
 
     @Ignore
-    @JsonIgnore
     var noUrut = 0
     var pcode = ""
     var barcode = ""
     var pname = ""
 
     @Ignore
-    @JsonIgnore
     var oldKode1 = ""
 
     @Ignore
-    @JsonIgnore
+     
     var varianName = ""
 
     @Ignore
-    @JsonIgnore
+     
     var isFreeGood = false
 
     @Ignore
-    @JsonIgnore
     var shortname = ""
     var isStatusActive = true
 
@@ -58,11 +56,11 @@ class FMaterial : Serializable {
 	 * 	 Dalam satu Divisi biasanya terdapat beberapa Vendor
 	 */
     @Ignore
-    @JsonIgnore
+     
     var isExclusiveDivisionTransaction = false
 
     @Ignore
-    @JsonIgnore
+     
     var isExclusiveDivisionView = false
 
     //	@ManyToOne
@@ -79,7 +77,7 @@ class FMaterial : Serializable {
     var ftaxBean = 0
 
     @Ignore
-    @JsonIgnore
+     
     var isTaxable = true
 
     /*
@@ -90,7 +88,7 @@ class FMaterial : Serializable {
     * Transaksi Mutasi & Stock opname tidak termasuk(sementara)
     */
     @Ignore
-    @JsonIgnore
+     
     var isExclusiveVendorTransaction = false
 
     //	@ManyToOne
@@ -102,18 +100,18 @@ class FMaterial : Serializable {
     //	@JoinColumn(name="fwarehouseBean_Utm", referencedColumnName="ID")
     //	private FWarehouse fwarehouseBean_Utm;
     @Ignore
-    @JsonIgnore
+     
     var fwarehouseBean_Utm = 0
 
     @Ignore
-    @JsonIgnore
+     
     var materialType: EnumMaterialType? = null
 
     //	@ManyToOne
     //	@JoinColumn(name="fdistributionChannelBean", referencedColumnName="ID")
     //	private FDistributionChannel fdistributionChannelBean;
     @Ignore
-    @JsonIgnore
+     
     var fdistributionChannelBean = 0
 
     //	@ManyToOne
@@ -132,21 +130,21 @@ class FMaterial : Serializable {
     //BATCH CODE --> Berhubungan dengan Stockist atau Gudang
     //PRODUCTION CODE --> Berhubungan dengan TANGGAL DIPRODUKSI DAN EXP.DATE
     @Ignore
-    @JsonIgnore
+     
     var principalCode = ""
 
     @Ignore
-    @JsonIgnore
+     
     var batchCode = ""
 
     @Ignore
-    @JsonIgnore
+     
     var productionCode = ""
     var productionDate = Date()
     var expiredDate = Date()
 
     @Ignore
-    @JsonIgnore
+     
     var prodclass = 0
     var uom1 = ""
     var uom2 = ""
@@ -175,7 +173,7 @@ class FMaterial : Serializable {
     * Harga Beli berbeda dengan HPP
     */
     @Ignore
-    @JsonIgnore
+     
     var hargaBeliUOM4NetAfterPpn = 0.0
 
     /*
@@ -183,31 +181,31 @@ class FMaterial : Serializable {
     * HPP adalah Harga Net Per Barang SEBELUM PPN
     */
     @Ignore
-    @JsonIgnore
+     
     var hppAwalPprice2 = 0.0 //Jika tidak ada HPP Awal maka menggunakan Harga Barang Net Sebelum PPN
 
     @Ignore
-    @JsonIgnore
+     
     var hppLifo = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var hppLifoTotalAmount = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var hppAverage = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var hppAverageTotalAmount = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var hppFifo = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var hppFifoTotalAmount = 0.0
 
     //PPRICE:: Disimpan dalam satuan Terbesar dan Terkecil. Setelah dan sebelum PPN
@@ -230,7 +228,7 @@ class FMaterial : Serializable {
 
     //TIDAK BOLEH DIGANTI-GANTI
     @Ignore
-    @JsonIgnore //dalam Mili Liter
+      //dalam Mili Liter
     var volumeSmalest = 0
 
     //Dalam Grams
@@ -241,129 +239,129 @@ class FMaterial : Serializable {
 
     //IN Cm.. Cm3
     @Ignore
-    @JsonIgnore
+     
     var caseWidth = 0 //Panjang
 
     @Ignore
-    @JsonIgnore
+     
     var caseHeight = 0 //Tinggi
 
     @Ignore
-    @JsonIgnore
+     
     var caseDepth = 0 //Lebar (dibalik kan kalau english.. hehehe)
 
     @Ignore
-    @JsonIgnore
+     
     var isFlagNewItem = false
 
     @Ignore
-    @JsonIgnore
+     
     var isFlagNewPrice = false
 
     @Ignore
-    @JsonIgnore
+     
     var isUseSpriceAlt = false
 
     //#PRICEALT1 -- Retail -->ALL AFTER PPN
     //Retail-Besar
     @Ignore
-    @JsonIgnore
+     
     var spriceAltRetailBes = 0.0
 
     //Retail-Sedang
     @Ignore
-    @JsonIgnore
+     
     var spriceAltRetailSed = 0.0
 
     //Retail-Kecil
     @Ignore
-    @JsonIgnore
+     
     var spriceAltRetailKec = 0.0
 
     //#PRICEALT2 --> Grosir 1
     //Grosir-Besar
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosir1Bes = 0.0
 
     //Grosir-Sed
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosir1Sed = 0.0
 
     //Grosir-Kec
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosir1Kec = 0.0
 
     //#PRICEALT3 --> Grosir 2
     //Grosir2-Bes
     //Grosir-Besar
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosir2Bes = 0.0
 
     //Grosir-Sed
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosir2Sed = 0.0
 
     //Grosir-Kec
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosir2Kec = 0.0
 
     //Grosir Quantity
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosirQtyMoreEqual1 = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosirQtyMoreEqual2 = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosirQtyMoreEqual3 = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosirQtyMoreEqual4 = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosirQtyValue1 = 0.0
 
-    @JsonIgnore
+     
     var spriceAltGrosirQtyValue2 = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosirQtyValue3 = 0.0
 
     @Ignore
-    @JsonIgnore
+     
     var spriceAltGrosirQtyValue4 = 0.0
 
-    @JsonIgnore
+     
     var created = Date()
 
-    @JsonIgnore
+     
     var modified = Date()
 
-    @JsonIgnore
+     
     var modifiedBy = "" //User ID
 
     @Ignore
-    @JsonIgnore
+     
     var isStared = false
 
     @Ignore
-    @JsonIgnore
+     
     var isUnread = false
 
     @Ignore
-    @JsonIgnore
+     
     var isSelected = false
     override fun equals(o: Any?): Boolean {
         if (this === o) return true

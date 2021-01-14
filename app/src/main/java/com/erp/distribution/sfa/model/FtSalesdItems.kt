@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import com.erp.distribution.sfa.model.modelenum.EnumUom
 import java.io.Serializable
 
-@Entity(tableName = "ftSalesdItems")
+@Entity(tableName = "ftsalesd_items")
 class FtSalesdItems : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

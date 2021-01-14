@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fMaterialPic")
+@Entity(tableName = "fmaterial_pic")
 class FMaterialPic : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

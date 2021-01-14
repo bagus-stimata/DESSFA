@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.util.*
 
-@Entity(tableName = "fMaterialSalesBrand")
+@Entity(tableName = "fmaterial_sales_brand")
 class FMaterialSalesBrand {
     @PrimaryKey(autoGenerate = true)
     var id = 0

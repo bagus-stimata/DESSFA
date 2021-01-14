@@ -10,7 +10,7 @@ import com.erp.distribution.sfa.model.modelenum.EnumTunaiKredit
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "ftPurchaseh")
+@Entity(tableName = "ftpurchaseh")
 class FtPurchaseh : Serializable {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0

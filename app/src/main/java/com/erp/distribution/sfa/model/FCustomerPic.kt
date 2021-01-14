@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fCustomerPic")
+@Entity(tableName = "fcustomer_pic")
 class FCustomerPic : Serializable {
     //	@ManyToOne
     //	@JoinColumn(name="fcustomerBean")

@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import com.erp.distribution.sfa.model.modelenum.EnumPromoDiscFgMethod
 import java.util.*
 
-@Entity(tableName = "fPromotionRulesh")
+@Entity(tableName = "fpromotion_rulesh")
 class FPromotionRulesh {
     @PrimaryKey(autoGenerate = true)
     var id = 0

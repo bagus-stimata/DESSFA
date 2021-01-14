@@ -6,7 +6,7 @@ import com.erp.distribution.sfa.model.modelenum.EnumTipeJob
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "ftJobh")
+@Entity(tableName = "ftjobh")
 class FtJobh : Serializable {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0

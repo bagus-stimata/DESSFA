@@ -2,11 +2,12 @@ package com.erp.distribution.sfa.model
 
 import androidx.room.Entity
 import androidx.room.Ignore
-import org.codehaus.jackson.annotate.JsonIgnore
+import androidx.room.PrimaryKey
+import com.erp.distribution.sfa.model.modelenum.*
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "ftSalesh")
+@Entity(tableName = "ftsalesh")
 class FtSalesh : Serializable {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0
@@ -244,7 +245,6 @@ class FtSalesh : Serializable {
     //	@ManyToOne
     //	@JoinColumn(name="fcustomerBean", referencedColumnName="ID", nullable=false)
     @Ignore
-    @JsonIgnore
     var fcustomerBeanTemp: FCustomer? = null
     var fcustomerBean = 0
 
@@ -279,7 +279,6 @@ class FtSalesh : Serializable {
     var accAccountFtSaleshCredit = 0
 
     @Ignore
-    @JsonIgnore
     var mapFtSalesdTemp: Map<Long, FtSalesdItems> = HashMap()
 
     //PEGIRIMAN:
@@ -289,7 +288,6 @@ class FtSalesh : Serializable {
     var fexpedisiBean = 0
 
     @Ignore
-    @JsonIgnore
     var isSelected = false
 
     /*

@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.Ignore
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "ftStocktransferdItems")
+@Entity(tableName = "ftstocktransferd_items")
 class FtStockTransferdItems {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

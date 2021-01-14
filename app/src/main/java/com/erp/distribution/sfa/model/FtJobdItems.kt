@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "ftJobdItems")
+@Entity(tableName = "ftjobd_items")
 class FtJobdItems : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

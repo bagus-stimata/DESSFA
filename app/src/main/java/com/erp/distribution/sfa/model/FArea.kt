@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fArea")
+@Entity(tableName = "farea")
 class FArea : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0

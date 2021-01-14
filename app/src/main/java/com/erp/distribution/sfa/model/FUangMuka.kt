@@ -7,7 +7,7 @@ import com.erp.distribution.sfa.model.modelenum.EnumAccTransactionType
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fUangMuka")
+@Entity(tableName = "fuang_muka")
 class FUangMuka : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0

@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import java.io.Serializable
 
-@Entity(tableName = "fParamDiskonItemVendor")
+@Entity(tableName = "fparam_diskon_item_vendor")
 class FParamDiskonItemVendor : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0

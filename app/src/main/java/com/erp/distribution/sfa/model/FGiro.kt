@@ -12,7 +12,7 @@ import java.util.*
  * The persistent class for the BUKUGIRO database table.
  *
  */
-@Entity(tableName = "fGiro")
+@Entity(tableName = "fgiro")
 class FGiro : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id: Long = 0

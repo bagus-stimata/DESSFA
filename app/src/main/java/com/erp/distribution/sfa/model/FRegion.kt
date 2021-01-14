@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fRegion")
+@Entity(tableName = "fregion")
 class FRegion : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0

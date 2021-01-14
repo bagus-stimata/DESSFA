@@ -2,11 +2,14 @@ package com.erp.distribution.sfa.model
 
 import androidx.room.Entity
 import androidx.room.Ignore
-import org.codehaus.jackson.annotate.JsonIgnore
+import androidx.room.PrimaryKey
+import com.erp.distribution.sfa.model.modelenum.EnumCurrency
+import com.erp.distribution.sfa.model.modelenum.EnumTipePajakCustomer
+import com.erp.distribution.sfa.model.modelenum.EnumTunaiKredit
 import java.io.Serializable
 import java.util.*
 
-@Entity(tableName = "fCustomer")
+@Entity(tableName = "fcustomer")
 class FCustomer : Serializable {
     @PrimaryKey(autoGenerate = true)
     var id = 0
@@ -148,14 +151,11 @@ class FCustomer : Serializable {
     var modifiedBy = "" //User ID
 
     @Ignore
-    @JsonIgnore
     var isStared = false
 
     @Ignore
-    @JsonIgnore
     var isUnread = false
 
     @Ignore
-    @JsonIgnore
     var isSelected = false
 }

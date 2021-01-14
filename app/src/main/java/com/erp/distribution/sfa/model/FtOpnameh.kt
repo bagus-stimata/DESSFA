@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 import com.erp.distribution.sfa.model.modelenum.EnumTipeStockOpname
 import java.util.*
 
-@Entity(tableName = "ftOpnameh")
+@Entity(tableName = "ftopnameh")
 class FtOpnameh {
     @PrimaryKey(autoGenerate = true)
     var refno: Long = 0
